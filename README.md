@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/saglamorhan/3-column-preview-card-component.git]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://saglamorhan.github.io/3-column-preview-card-component/]
 
 ## My process
 
