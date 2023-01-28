@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* ####Primary Colors    */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* ####Neutral Colors    */
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+  --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons)*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--very-light-gray);
+}
+.card {
+  display: flex;
+  position: absolute;
+  top: 52.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 3.2em;
+}
+.column {
+  width: 20.4em;
+  height: 33.4em;
+}
+.column-1 {
+  background-color: var(--bright-orange);
+  border-radius: 0.5em 0 0 0.5em;
+}
+.column-2 {
+  background-color: var(--dark-cyan);
+}
+.column-3 {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0.5em 0.5em 0;
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+  font-size: 2.65em;
+  padding-top: 0.8em;
+}
+.content {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.7em;
+  padding-top: 1.5em;
+}
+.btn-learn {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  padding: 0.85em 1.95em;
+  border-radius: 6em;
+  margin-top: 5.5em;
+  font-weight: 400;
+  font-size: 1em;
+}
+.btn-1 {
+  color: var(--bright-orange);
+}
+.btn-1:hover {
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+  cursor: pointer;
+}
+.btn-2 {
+  color: var(--dark-cyan);
+}
+.btn-2:hover {
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+  cursor: pointer;
+}
+.btn-3 {
+  color: var(--very-dark-cyan);
+}
+.btn-3:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+  cursor: pointer;
+}
+@media only screen and (max-width: 950px) {
+  .card {
+    flex-direction: column;
+    top: 50%;
+  }
+  .btn-learn {
+    margin-top: 1.5em;
+  }
+  .column {
+    width: 21.8em;
+    height: 29.4em;
+  }
+}
